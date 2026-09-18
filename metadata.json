@@ -1,0 +1,6 @@
+{
+  "name": "健康急救章",
+  "description": "AI 醫療導引與即時診所助手 - 智慧症狀分析、就醫急迫性評估、推薦科別與附近即時營業診所清單",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
