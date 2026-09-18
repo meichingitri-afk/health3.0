@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ClinicItem, ClinicOpenStatus } from '../types';
 import { ClinicCard } from './ClinicCard';
-import { Building2, Filter, AlertOctagon, Clock, RefreshCw } from 'lucide-react';
+import { Building2, Filter, AlertOctagon, Clock, RefreshCw, Globe } from 'lucide-react';
 
 interface ClinicDirectoryProps {
   clinics: (ClinicItem & { openStatus?: ClinicOpenStatus })[];
@@ -20,7 +20,7 @@ export const ClinicDirectory: React.FC<ClinicDirectoryProps> = ({
   isEmergency,
   onRefresh
 }) => {
-  const [filterMode, setFilterMode] = useState<'ALL' | 'OPEN_ONLY' | 'EMERGENCY_ONLY'>(
+  const [filterMode, setFilterMode] = useState<'ALL' | 'OPEN_ONLY' | 'ONLINE_BOOKING' | 'EMERGENCY_ONLY'>(
     isEmergency ? 'EMERGENCY_ONLY' : 'ALL'
   );
 
@@ -31,8 +31,13 @@ export const ClinicDirectory: React.FC<ClinicDirectoryProps> = ({
     if (filterMode === 'OPEN_ONLY') {
       return clinic.openStatus?.status === 'OPEN' || clinic.isEmergencyHospital;
     }
+    if (filterMode === 'ONLINE_BOOKING') {
+      return Boolean(clinic.bookingUrl);
+    }
     return true;
   });
+
+  const onlineBookingCount = clinics.filter((c) => Boolean(c.bookingUrl)).length;
 
   return (
     <div className="space-y-4">
@@ -46,7 +51,7 @@ export const ClinicDirectory: React.FC<ClinicDirectoryProps> = ({
             </h3>
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
-            依據目前所在地（{city} {district}）與建議科別精確匹配開診時段
+            依據目前所在地（{city} {district}）與建議科別精確匹配開診時段與網路預約服務
           </p>
         </div>
 
@@ -73,6 +78,18 @@ export const ClinicDirectory: React.FC<ClinicDirectoryProps> = ({
           >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             <span>僅顯示營業中</span>
+          </button>
+
+          <button
+            onClick={() => setFilterMode('ONLINE_BOOKING')}
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors shrink-0 ${
+              filterMode === 'ONLINE_BOOKING'
+                ? 'bg-sky-600 text-white shadow-xs'
+                : 'bg-sky-50 text-sky-700 hover:bg-sky-100'
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>可網路預約 ({onlineBookingCount})</span>
           </button>
 
           <button

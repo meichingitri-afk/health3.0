@@ -76,6 +76,7 @@ export interface ClinicItem {
   latitude: number;
   longitude: number;
   tags?: string[];
+  bookingUrl?: string; // 網路線上預約/掛號系統網址
 }
 
 export type ClinicOpenStatus = 

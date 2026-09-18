@@ -38,7 +38,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0441,
     longitude: 121.5133,
-    tags: ['健保特約', '備有快速流感篩檢', '附設蒸氣噴喉治療']
+    tags: ['健保特約', '備有快速流感篩檢', '附設蒸氣噴喉治療'],
+    bookingUrl: 'https://reg.ntu-doctor.tw/clinic/tpe-ent-01'
   },
   {
     id: 'tpe-gi-01',
@@ -59,7 +60,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0298,
     longitude: 121.5215,
-    tags: ['超音波檢查', '無痛胃鏡', '幽門螺旋桿菌檢驗']
+    tags: ['超音波檢查', '無痛胃鏡', '幽門螺旋桿菌檢驗'],
+    bookingUrl: 'https://kangde-gi.webreg.tw/'
   },
   {
     id: 'tpe-cardio-01',
@@ -80,7 +82,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0336,
     longitude: 121.5401,
-    tags: ['12導程心電圖', '24小時動態血壓監測', '心臟超音波']
+    tags: ['12導程心電圖', '24小時動態血壓監測', '心臟超音波'],
+    bookingUrl: 'https://daan-cardio.webreg.tw/booking'
   },
   {
     id: 'tpe-neuro-01',
@@ -101,7 +104,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0272,
     longitude: 121.5312,
-    tags: ['偏頭痛專門', '耳石復位治療', '自律神經檢測']
+    tags: ['偏頭痛專門', '耳石復位治療', '自律神經檢測'],
+    bookingUrl: 'https://anmin-neuro.webreg.com.tw/'
   },
   {
     id: 'tpe-ortho-01',
@@ -122,7 +126,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0521,
     longitude: 121.5322,
-    tags: ['數位 X 光機', '超音波導引注射', '急性扭傷處置']
+    tags: ['數位 X 光機', '超音波導引注射', '急性扭傷處置'],
+    bookingUrl: 'https://likang-ortho.webreg.tw/reserve'
   },
   {
     id: 'tpe-derma-01',
@@ -143,7 +148,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0418,
     longitude: 121.5115,
-    tags: ['急性蕁麻疹', '帶狀皰疹快速評估', '皮膚鏡檢']
+    tags: ['急性蕁麻疹', '帶狀皰疹快速評估', '皮膚鏡檢'],
+    bookingUrl: 'https://boai-skin.webreg.tw/appointment'
   },
   // 台北急診醫院
   {
@@ -164,7 +170,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0416,
     longitude: 121.5178,
-    tags: ['醫學中心', '24小時急診', '重度級急救責任醫院', '急性心肌梗塞/腦中風綠色通道']
+    tags: ['醫學中心', '24小時急診', '重度級急救責任醫院', '急性心肌梗塞/腦中風綠色通道'],
+    bookingUrl: 'https://reg.ntuh.gov.tw/WebReg/'
   },
   {
     id: 'hosp-mmh',
@@ -184,7 +191,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0592,
     longitude: 121.5226,
-    tags: ['醫學中心', '24H急診', '小兒急症專長', '心導管小組隨時待命']
+    tags: ['醫學中心', '24H急診', '小兒急症專長', '心導管小組隨時待命'],
+    bookingUrl: 'https://www.mmh.org.tw/register.php'
   },
 
   // 新北市
@@ -207,7 +215,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0152,
     longitude: 121.4645,
-    tags: ['週日開診', '公費快篩', '中耳炎顯微鏡檢查']
+    tags: ['週日開診', '公費快篩', '中耳炎顯微鏡檢查'],
+    bookingUrl: 'https://xinzhang-ent.webreg.tw/reserve'
   },
   {
     id: 'ntpc-gi-01',
@@ -228,7 +237,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 25.0089,
     longitude: 121.4588,
-    tags: ['腹部超音波', '幽門螺旋桿菌快檢', '急慢性胃炎處置']
+    tags: ['腹部超音波', '幽門螺旋桿菌快檢', '急慢性胃炎處置'],
+    bookingUrl: 'https://jiansheng-clinic.webreg.tw/'
   },
   {
     id: 'hosp-femh',
@@ -248,7 +258,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 24.9981,
     longitude: 121.4526,
-    tags: ['醫學中心', '24H急診', '急重症救護中心', '外傷中心']
+    tags: ['醫學中心', '24H急診', '急重症救護中心', '外傷中心'],
+    bookingUrl: 'https://www.femh.org.tw/visit/visit.aspx'
   },
 
   // 台中市
@@ -271,7 +282,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 24.1755,
     longitude: 120.6482,
-    tags: ['兒科用藥專業', '吸鼻治療', '呼吸道過敏調理']
+    tags: ['兒科用藥專業', '吸鼻治療', '呼吸道過敏調理'],
+    bookingUrl: 'https://hongren-ent.webreg.tw/booking'
   },
   {
     id: 'txg-cardio-01',
@@ -292,7 +304,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 24.1678,
     longitude: 120.6542,
-    tags: ['心電圖快速判讀', '高血壓胸悶專科', '氣喘噴霧處置']
+    tags: ['心電圖快速判讀', '高血壓胸悶專科', '氣喘噴霧處置'],
+    bookingUrl: 'https://wenxin-clinic.webreg.tw/reserve'
   },
   {
     id: 'hosp-vghtc',
@@ -312,7 +325,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 24.1856,
     longitude: 120.6053,
-    tags: ['醫學中心', '24H急診', '急救重症專責醫院', '胸痛中心']
+    tags: ['醫學中心', '24H急診', '急救重症專責醫院', '胸痛中心'],
+    bookingUrl: 'https://register.vghtc.gov.tw/'
   },
 
   // 高雄市
@@ -335,7 +349,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 22.6631,
     longitude: 120.3061,
-    tags: ['公費篩檢', '感冒咽喉痛', '眩暈急症處理']
+    tags: ['公費篩檢', '感冒咽喉痛', '眩暈急症處理'],
+    bookingUrl: 'https://yucheng-ent.webreg.tw/appointment'
   },
   {
     id: 'khh-gi-01',
@@ -356,7 +371,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 22.6605,
     longitude: 120.3032,
-    tags: ['急慢性腸胃炎', '腹痛膽結石篩檢', '高階超音波']
+    tags: ['急慢性腸胃炎', '腹痛膽結石篩檢', '高階超音波'],
+    bookingUrl: 'https://bozheng-gi.webreg.tw/reserve'
   },
   {
     id: 'hosp-vghks',
@@ -376,7 +392,8 @@ export const CLINICS_DATABASE: ClinicItem[] = [
     },
     latitude: 22.6806,
     longitude: 120.3197,
-    tags: ['醫學中心', '24H急診', '急救責任醫院', '重度創傷救治']
+    tags: ['醫學中心', '24H急診', '急救責任醫院', '重度創傷救治'],
+    bookingUrl: 'https://www6.vghks.gov.tw/register/'
   }
 ];
 
